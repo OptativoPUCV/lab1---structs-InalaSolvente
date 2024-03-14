@@ -29,12 +29,12 @@ void reverseArray(int arr[], int size)
   int temp;
   for (unsigned int i = 0 ; i < j ; i++)
     {
-      if (i != j){
+      
       temp = arr[i];
       arr[i] = arr[j];
       arr[j] = temp;
       j--;
-      }
+      
     }
 }
 
