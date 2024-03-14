@@ -1,1 +1,11 @@
 
+Thu 14 Mar 2024 02:55:04 PM UTC: 
+ exercises.c | 71 +++++++++++++++++++++++++++++++++++++++++++++++++++++++------
+ 1 file changed, 64 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:97:5: error: expected expression before ‘}’ token
+   97 |     }
+      |     ^
+Compilation failed
+f7aa6b9
