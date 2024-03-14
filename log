@@ -20,3 +20,12 @@ exercises.c:19:10: error: ‘max’ may be used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 ecb06cf
+Thu 14 Mar 2024 02:56:54 PM UTC: 
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:19:10: error: ‘max’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   19 |   return max; }
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+28ec53e
