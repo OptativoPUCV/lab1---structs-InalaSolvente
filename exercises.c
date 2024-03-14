@@ -72,7 +72,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   result = (int *)malloc(size1 + size2 * sizeof(int));
   for (unsigned int i = 0 ; i < size1 + size2 ; i++)
     {
-      if(arr1[j] <= arr2[k]) {
+      if(arr1[j] < arr2[k]) {
         result[i] = arr1[j];
         j++;
           }
