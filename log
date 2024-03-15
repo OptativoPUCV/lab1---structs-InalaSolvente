@@ -88,3 +88,9 @@ exercises.c:105:50: error: unused variable ‘sinOrden’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 dbf358a
+Fri 15 Mar 2024 01:51:47 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+fb15151
