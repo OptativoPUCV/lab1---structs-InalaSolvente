@@ -160,3 +160,14 @@ exercises.c:172:18: error: control reaches end of non-void function [-Werror=ret
 cc1: all warnings being treated as errors
 Compilation failed
 161ddb2
+Fri 15 Mar 2024 02:16:42 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+test.c: In function ‘crearListaEnlazada’:
+exercises.c:172:10: error: ‘lista’ is used uninitialized [-Werror=uninitialized]
+  172 |   return lista; }
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+51b39b7
