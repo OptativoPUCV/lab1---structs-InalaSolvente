@@ -112,3 +112,23 @@ Fri 15 Mar 2024 01:54:11 AM UTC:
  tests:  0|1
 total_score: 60/70
 261c588
+Fri 15 Mar 2024 02:15:40 AM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:169:13: error: invalid type argument of ‘->’ (have ‘Nodo’ {aka ‘struct nodo’})
+  169 |     lista[i]->numero = arr[i];
+      |             ^~
+exercises.c:170:13: error: invalid type argument of ‘->’ (have ‘Nodo’ {aka ‘struct nodo’})
+  170 |     lista[i]->siguiente = NULL;
+      |             ^~
+exercises.c:172:10: error: invalid type argument of unary ‘*’ (have ‘Nodo’ {aka ‘struct nodo’})
+  172 |   return *lista[0]; }
+      |          ^~~~~~~~~
+exercises.c:172:21: error: control reaches end of non-void function [-Werror=return-type]
+  172 |   return *lista[0]; }
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+ba72803
