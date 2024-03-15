@@ -77,3 +77,14 @@ Fri 15 Mar 2024 01:45:51 AM UTC:
  tests:  0|2
 total_score: 50/70
 49b6649
+Fri 15 Mar 2024 01:51:37 AM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:105:50: error: unused variable ‘sinOrden’ [-Werror=unused-variable]
+  105 |   unsigned short menorMayor = 0, mayorMenor = 0, sinOrden = 0;
+      |                                                  ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dbf358a
