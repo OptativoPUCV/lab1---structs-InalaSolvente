@@ -112,8 +112,9 @@ int checkSorted(int arr[], int size) {
         mayorMenor++;
       }
     }
-  if (mayorMenor == size) return mayorMenor;
-  else if (menorMayor == size) return menorMayor ;
+  printf("%d %d\n", menorMayor, mayorMenor);
+  if (mayorMenor == size) return -1;
+  else if (menorMayor == size) return 1 ;
   else return 0;
 }
 
