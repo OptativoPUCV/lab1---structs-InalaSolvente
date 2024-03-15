@@ -169,4 +169,4 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     lista[i].numero = arr[i];
     lista[i].siguiente = NULL;
   }
-  return *lista[0]; }
+  return *lista; }
