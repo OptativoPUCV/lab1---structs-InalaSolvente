@@ -248,3 +248,13 @@ Sun 17 Mar 2024 01:11:45 AM UTC:
  tests:  0|1
 total_score: 60/70
 eea466e
+Sun 17 Mar 2024 01:22:34 AM UTC: 
+ exercises.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:164:18: error: incompatible types when assigning to type ‘Nodo’ {aka ‘struct nodo’} from type ‘Nodo *’ {aka ‘struct nodo *’}
+  164 |     *nuevoNodo = (Nodo *)malloc((i+1) * sizeof(Nodo));
+      |                  ^
+Compilation failed
+fb3d7f9
