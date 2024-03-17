@@ -14,7 +14,7 @@ int findMax(int arr[], int size) {
   for (unsigned int i = 0 ; i < size ; i++)
     {
       if (i == 0) max = arr[0];
-      if (arr[i] > max) max = arr[i];
+      else if (max < arr[i]) max = arr[i];
     }
   return max; }
 
@@ -25,16 +25,13 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) 
 {
-  int j = size - 1;
-  int temp;
-  for (unsigned int i = 0 ; i < j ; i++)
+  int j = size -1, aux;
+  for(unsigned int i = 0; i < j ; i++)
     {
-      
-      temp = arr[i];
+      aux = arr[i];
       arr[i] = arr[j];
-      arr[j] = temp;
+      arr[j] = aux;
       j--;
-      
     }
 }
 
