@@ -65,7 +65,7 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  int j, k;
+  int j = 0, k = 0;
   for(unsigned int i = 0; i < size1 + size2; i++)
     {
       if (j == size1) result[i] = arr2[k];
