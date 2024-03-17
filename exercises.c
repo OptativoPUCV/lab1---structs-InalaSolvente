@@ -162,7 +162,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   Nodo *lista = NULL;
   for (unsigned int i = 0 ; i < size ; i++){
     Nodo *lista = (Nodo *)malloc((i+1) * sizeof(Nodo));
-    lista[i].numero = arr[i];
-    lista[i].siguiente = NULL;
+    lista->numero = arr[i];
+    lista->siguiente = NULL;
   }
   return lista; }
