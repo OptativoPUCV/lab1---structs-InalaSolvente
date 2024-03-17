@@ -162,6 +162,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   Nodo *lista = NULL, *nuevoNodo = NULL, *ultimoNodo = NULL;
   for (unsigned int i = 0 ; i < size ; i++){
     nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
+    if (nuevoNodo == NULL) exit(EXIT_FAILURE);
     nuevoNodo->numero = arr[i];
     nuevoNodo->siguiente = NULL;
     if (lista == NULL) lista = nuevoNodo;
