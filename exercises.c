@@ -44,17 +44,18 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-  int *newArr = (int *)malloc(size * sizeof(int));
-  int j = 0;
-  for (unsigned int i = 0 ; i < size ; i++)
+  int *newArr = malloc(sizeof(int) * size);
+  int cont = 0;
+  for(unsigned int i = 0; i < size; i++)
     {
-      if (arr[i] % 2 == 0){
-        newArr[j] = arr[i];
-        j++;
+      if (arr[i] % 2 == 0)
+      {
+        newArr[cont] = arr[i];
+        cont++;
       }
     }
-  *newSize = j;
-  return newArr; }
+  *newSize = cont;
+  return  newArr; }
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -64,31 +65,25 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  int j = 0;
-  int k = 0;
-  for (unsigned int i = 0 ; i < size1 + size2 ; i++)
+  int j, k;
+  for(unsigned int i = 0; i < size1 + size2; i++)
     {
-      if (j >= size1)
+      if (j == size1) result[i] = arr2[k];
+      else if (k == size2) result[i] = arr1[j];
+      else 
       {
-        result[i] = arr2[k];
-        k++;
-      }
-      else if (k >= size2)
-      {
-        result[i] = arr1[j];
-        j++;
-      }
-      else {
-      if(arr1[j] <= arr2[k]) {
-        result[i] = arr1[j];
-        j++;
-          }
-      else {
-        result[i] = arr2[k];
-        k++;
-          }
+        if (arr1[j] <= arr2[k])
+        {
+          result[i] = arr1[j];
+          j++;
         }
-    }
+        else {
+          result[i] = arr2[k];
+          k++;
+        }
+          
+        }
+      }
 
   }
 
