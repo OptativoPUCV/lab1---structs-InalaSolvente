@@ -268,3 +268,8 @@ exercises.c:164:18: error: incompatible types when assigning to type ‘Nodo’ 
       |                  ^
 Compilation failed
 700c7e3
+Sun 17 Mar 2024 02:38:59 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  0|0
+f1234b0
